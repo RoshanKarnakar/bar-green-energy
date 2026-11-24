@@ -1,26 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-bar-green: #8ED000;
+  --color-on-bar-green: #0A0A0A;
+  --color-bar-black: #0A0A0A;
+  --color-bar-white: #FFFFFF;
+  --color-light-gray: #F5F6F4;
+  --color-dark-gray: #242424;
+  --color-accent: #8ED000;
+  --color-on-accent: #0A0A0A;
+  --color-accent-tint: #F9FFE7;
+  --color-accent-container: #D4FF91;
+  --color-on-accent-container: #121F00;
+  --color-success: #334F00;
+  --color-on-success: #FFFFFF;
+  --color-success-container: #D4FF91;
+  --color-on-success-container: #121F00;
+  --color-warning: #7A4F01;
+  --color-on-warning: #FFFFFF;
+  --color-warning-container: #FEF3C7;
+  --color-on-warning-container: #451A03;
+  --color-error: #BA1A1A;
+  --color-on-error: #FFFFFF;
+  --color-error-container: #FFDAD6;
+  --color-on-error-container: #410002;
+  --color-light-primary: #0A0A0A;
+  --color-light-on-primary: #FFFFFF;
+  --color-light-secondary: #242424;
+  --color-light-on-secondary: #FFFFFF;
+  --color-light-surface: #FFFFFF;
+  --color-light-surface-low: #F5F6F4;
+  --color-light-surface-container: #ECEEEB;
+  --color-light-surface-high: #E4E2E1;
+  --color-light-on-surface: #0A0A0A;
+  --color-light-on-surface-variant: #474746;
+  --color-light-outline: #787776;
+  --color-light-outline-variant: #E4E2E1;
+  --color-dark-primary: #8ED000;
+  --color-dark-on-primary: #0A0A0A;
+  --color-dark-secondary: #E4E2E1;
+  --color-dark-on-secondary: #0A0A0A;
+  --color-dark-surface: #0A0A0A;
+  --color-dark-surface-low: #141414;
+  --color-dark-surface-container: #1B1C1C;
+  --color-dark-surface-high: #242424;
+  --color-dark-on-surface: #FFFFFF;
+  --color-dark-on-surface-variant: #C8C6C5;
+  --color-dark-outline: #787776;
+  --color-dark-outline-variant: #303030;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-title: "Geist", sans-serif;
+  --font-body: "Geist", sans-serif;
+  --font-label: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  --text-display-lg: 56px;
+  --text-display-lg--line-height: 62px;
+  --text-display-lg-mobile: 32px;
+  --text-display-lg-mobile--line-height: 38px;
+  --text-display-md: 44px;
+  --text-display-md--line-height: 50px;
+  --text-display-md-mobile: 28px;
+  --text-display-md-mobile--line-height: 34px;
+  --text-headline-lg: 36px;
+  --text-headline-lg--line-height: 42px;
+  --text-headline-lg-mobile: 24px;
+  --text-headline-lg-mobile--line-height: 30px;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 30px;
+  --text-title-lg: 20px;
+  --text-title-lg--line-height: 28px;
+  --text-title-md: 16px;
+  --text-title-md--line-height: 24px;
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+  --text-body-md: 15px;
+  --text-body-md--line-height: 24px;
+  --text-body-sm: 13px;
+  --text-body-sm--line-height: 20px;
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-mono-md: 14px;
+  --text-mono-md--line-height: 20px;
+  --text-mono-sm: 12px;
+  --text-mono-sm--line-height: 16px;
+  --radius-sm: 6px;
+  --radius-default: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  --spacing-gutter-xs: 4px;
+  --spacing-gutter-sm: 8px;
+  --spacing-gutter-md: 16px;
+  --spacing-gutter-lg: 24px;
+  --spacing-gutter-xl: 32px;
+  --spacing-section: 64px;
+  --spacing-page-margin: 24px;
+  --transition-duration-state-change: 150ms;
+  --transition-duration-surface-enter: 250ms;
+  --transition-duration-surface-exit: 150ms;
+  --ease-state-change: ease-out;
+  --ease-surface-enter: cubic-bezier(0.2, 0, 0, 1);
+  --ease-surface-exit: cubic-bezier(0.3, 0, 1, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: #0a0a0a; font-family: "Geist", sans-serif; }
