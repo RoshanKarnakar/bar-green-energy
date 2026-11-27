@@ -6,6 +6,7 @@ import { useCallback, useEffect, useState } from "react";
 import { CalendarDays, LayoutDashboard, Mail, MessageSquareText, Settings, Bike, ExternalLink, RefreshCw } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 
+
 type Submission = {
   id: string; kind: "enquiry" | "test_ride" | "contact"; name: string; email: string;
   model: string; city: string; topic: string; status: string; preferred_at: string | null; created_at: string;
