@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build": "next build --webpack"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
@@ -28,9 +29,4 @@
     "tailwindcss": "4.3.3",
     "typescript": "^5"
   }
-  {
-  "scripts": {
-    "build": "next build --webpack"
-  }
-}
 }
