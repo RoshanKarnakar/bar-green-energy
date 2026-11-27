@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "./globals.css";
 import { Suspense, type ReactNode } from "react";
 import { redirect } from "next/navigation";
 import { connection } from "next/server";
