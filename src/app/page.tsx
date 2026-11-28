@@ -93,7 +93,15 @@ export default function HomePage() {
 
             <div className="lg:col-span-7">
               <div className="rounded-xl overflow-hidden border border-light-outline-variant bg-light-surface">
-                <Image src="https://lh3.googleusercontent.com/aida/ALJJyrCUKj4KhgsdJsulNbRndudpMJ_utopEeRKL_B6eTaSDqfCG5u69wIOhNbvuDOa1svp-5DxxSqr7tCQ-Zg6l6HdCuJP_vsnpOMVfnOiI1jyEhWlRCHTUAk4cfwjMekyBO53wmBFtGIqqaRQM_IISghH2t5kcS83M7nlI8JjmTEbzBMA7l2WLLrgnSgejYEUOhEsbbvJ60nHbi5qREDlqXUE1rFwxFzTChjhXUA00udZoWi5sRcKIaQ" alt="BAR electric scooter in matte black and electric green" width={1280} height={720} priority unoptimized className="w-full h-[320px] sm:h-[420px] lg:h-[480px] object-cover" /></div>
+                <Image
+                  src="/images/banners/Home%20Page.png"
+                  alt="BAR electric scooter"
+                  width={1280}
+                  height={720}
+                  priority
+                  className="w-full h-[320px] sm:h-[420px] lg:h-[480px] object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>

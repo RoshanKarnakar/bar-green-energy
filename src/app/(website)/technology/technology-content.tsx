@@ -70,7 +70,15 @@ export default function TechnologyPageContent() {
               </p>
             </div>
             <div className="lg:col-span-6">
-              <Image src="https://lh3.googleusercontent.com/aida/ALJJyrDw6IA3uTdpWz0jZuaMMz0no7cbJgHHB6MAkY2cADPRFoP4EgtB17gz0mXM7aTzUpczxPrDrYZrzSFUGiVqFcqiKNv7Rs6rdp2v1r8MvT2TA_1kN4EXBNGMnrCuvQEbPgkGAxZfL8SBsK-cV-zq-ldKMXZcgAocbqlRZu2B9eck2nlppICZ3ZqiI7mCDteSnkgcWKwTJAuoiuy01U6oeCFeFsXConp3wije1UostlQXqqh0wBib" alt="Modular lithium-ion electric scooter battery pack" width={1000} height={700} unoptimized className="w-full h-[300px] lg:h-[360px] object-cover rounded-xl border border-dark-outline-variant" /></div>
+              <Image
+                src="/images/banners/Tech%20page.png"
+                alt="Electric scooter battery pack"
+                width={1000}
+                height={700}
+                loading="eager"
+                className="w-full h-[300px] lg:h-[360px] rounded-xl border border-dark-outline-variant object-cover"
+              />
+            </div>
           </div>
         </section>
 
