@@ -48,20 +48,20 @@ export default function SustainabilityPageContent() {
               <SymbolIcon name="menu" className="text-[22px]" />
             </button> </div>
         </div>
-       <div
-  id="mobile-menu"
-  className={`${menuOpen ? "block" : "hidden"} lg:hidden border-t border-light-outline-variant bg-light-surface px-4 py-4`}
->
-  <nav aria-label="Mobile" className="flex flex-col gap-2">
-    <Link href="/" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md text-light-on-surface-variant font-label text-label-lg flex items-center">Home</Link>
-    <Link href="/products" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md text-light-on-surface-variant font-label text-label-lg flex items-center">Products</Link>
-    <Link href="/about" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md text-light-on-surface-variant font-label text-label-lg flex items-center">About Us</Link>
-    <Link href="/technology" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md text-light-on-surface-variant font-label text-label-lg flex items-center">Technology</Link>
-    <Link href="/sustainability" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md bg-accent-tint text-on-accent-container font-label text-label-lg flex items-center">Sustainability</Link>
-    <Link href="/contact" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md text-light-on-surface-variant font-label text-label-lg flex items-center">Contact</Link>
-    <Link href="/book-test-ride" onClick={() => setMenuOpen(false)} className="mt-2 min-h-[44px] px-5 py-3 rounded-full bg-bar-green text-on-bar-green font-label text-label-lg flex items-center justify-center">Book a Test Ride</Link>
-  </nav>
-</div>
+        <div
+          id="mobile-menu"
+          className={`${menuOpen ? "block" : "hidden"} lg:hidden border-t border-light-outline-variant bg-light-surface px-4 py-4`}
+        >
+          <nav aria-label="Mobile" className="flex flex-col gap-2">
+            <Link href="/" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md text-light-on-surface-variant font-label text-label-lg flex items-center">Home</Link>
+            <Link href="/products" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md text-light-on-surface-variant font-label text-label-lg flex items-center">Products</Link>
+            <Link href="/about" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md text-light-on-surface-variant font-label text-label-lg flex items-center">About Us</Link>
+            <Link href="/technology" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md text-light-on-surface-variant font-label text-label-lg flex items-center">Technology</Link>
+            <Link href="/sustainability" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md bg-accent-tint text-on-accent-container font-label text-label-lg flex items-center">Sustainability</Link>
+            <Link href="/contact" onClick={() => setMenuOpen(false)} className="min-h-[44px] px-4 py-2.5 rounded-md text-light-on-surface-variant font-label text-label-lg flex items-center">Contact</Link>
+            <Link href="/book-test-ride" onClick={() => setMenuOpen(false)} className="mt-2 min-h-[44px] px-5 py-3 rounded-full bg-bar-green text-on-bar-green font-label text-label-lg flex items-center justify-center">Book a Test Ride</Link>
+          </nav>
+        </div>
       </header>
 
       <main className="flex-1">
